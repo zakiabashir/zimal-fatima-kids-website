@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimal Fatima's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Zimal Fatima</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="content">
+           <img src="/asset/profile.jpeg" alt="Zimal Fatima" class="profile-pic"> <!-- Replace with your profile image path -->
+         <h1>Welcome to Zimal Fatima's Website</h1>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2 >About Zimal Fatima</h2><br>
+            <h3>Name: Zimal Fatima</h3><br>
+            <h3>Age: 1.5 years</h3><br>
+            <h3>Gender:Baby Girl</h3><br>
+            <h4>Zimal Fatima was a bubbly and energetic 1.5-year-old who was always on the go! With her tiny hands and feet, she would toddle around, exploring every nook and cranny of her surroundings. Her big brown eyes sparkled with curiosity as she discovered new things, and her giggles filled the air as she played with toys and loved ones. At this age, Zimal was learning new words and phrases every day, and her babbling was slowly turning into sweet, understandable sentences. She loved playing with blocks, cuddling with her favorite stuffed animals, and snuggling with her family members. With her chubby cheeks and wobbly steps, Zimal was a bundle of joy and cuteness, bringing happiness to everyone around her.</h4>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section">
+        <div class="content">
+            <h2 style="background-color: rgb(102, 169, 8);">Hobbies</h2><br><br>
+            
+                <h4> =****= &nbsp; &#128663 &#128060 Playing with toys &#128062 &#128663 &nbsp;  =****=</h4><br>
+                <h4> =****= &nbsp; &#127850 Eating delicious food &#127829; &nbsp;  =****=</h4><br>
+                <h4>=****=  &nbsp;&#127801 Exploring new places &#127757 &nbsp;  =****=</h4>
+          
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="content">
+            <h2>Gallery</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="asset/pic1.jpeg" style="width:50%"> <!-- Replace with your gallery image paths -->
+                </div>
+                <div class="mySlides fade">
+                    <img src="asset/pic4.jpeg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asset/picb.jpeg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asset/pic7.jpeg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asset/orange.jpeg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asset/pink1.jpeg" style="width:50%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
